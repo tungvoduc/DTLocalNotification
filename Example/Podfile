@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DTLocalNotification_Example' do
+  pod 'DTLocalNotification', :path => '../'
+
+  target 'DTLocalNotification_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
