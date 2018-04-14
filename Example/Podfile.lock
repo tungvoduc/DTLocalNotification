@@ -1,0 +1,16 @@
+PODS:
+  - DTLocalNotification (0.1.0)
+
+DEPENDENCIES:
+  - DTLocalNotification (from `../`)
+
+EXTERNAL SOURCES:
+  DTLocalNotification:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DTLocalNotification: 8cac0ec85d458fe836d94f3a432234f38aac446e
+
+PODFILE CHECKSUM: fddfc412e9c1f4ec75ea8c3c81a1ecfd587af883
+
+COCOAPODS: 1.4.0

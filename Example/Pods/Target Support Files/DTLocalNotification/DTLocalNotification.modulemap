@@ -1,0 +1,6 @@
+framework module DTLocalNotification {
+  umbrella header "DTLocalNotification-umbrella.h"
+
+  export *
+  module * { export * }
+}

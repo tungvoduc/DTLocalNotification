@@ -1,0 +1,6 @@
+framework module Pods_DTLocalNotification_Example {
+  umbrella header "Pods-DTLocalNotification_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
