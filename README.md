@@ -6,8 +6,10 @@
 [![Platform](https://img.shields.io/cocoapods/p/DTLocalNotification.svg?style=flat)](http://cocoapods.org/pods/DTLocalNotification)
 
 ## Screenshots
-<img src="Screenshots/screenshot1.png" width=300 rspace=20>
-<img src="Screenshots/screenshot2.png" width=300>
+<p align="left" >
+  <img src="Screenshots/screenshot1.png" width=350 hspace=20>
+  <img src="Screenshots/screenshot2.png" width=350>
+<p/>
 
 ## Usage
 In order to present a local notification, it is required to have a DTLocalNotification instance before asking the presenter to show it:
