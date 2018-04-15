@@ -45,7 +45,7 @@ struct DTDefaultNotificationViewStyle: DTNotificationViewStyle {
     
     // Initializer
     // Should create your own default values
-    init(height: CGFloat = -1, width: CGFloat = -1, topInset: CGFloat = -1, bottomInset: CGFloat = -1, rightInset: CGFloat = -1, leftInset: CGFloat = -1) {
+    init(height: CGFloat = 0, width: CGFloat = 0, topInset: CGFloat = 0, bottomInset: CGFloat = 0, rightInset: CGFloat = 0, leftInset: CGFloat = 0) {
         self.height = height
         self.width = height
         self.topInset = height
