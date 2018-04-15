@@ -10,7 +10,7 @@ import DTLocalNotification
 
 class CustomLocalNotificationViewController: DTLocalNotificationViewController {
     struct Dimension {
-        static let horizontalInset: CGFloat = 20
+        static let horizontalInset: CGFloat = 10
         static let topInset: CGFloat = UIEdgeInsets.safeAreaInset.top > 0 ? UIEdgeInsets.safeAreaInset.top + 10 : 30
     }
     

@@ -104,20 +104,12 @@ class ViewController: UITableViewController {
             
             if indexPath.row == 0 {
                 view.insertShadow(color: UIColor.black, opacity: 0.15, radius: 5, offset: CGSize(width: 0, height: 1))
-                
-                notification.style.leftInset = 0
-                notification.style.rightInset = 0
                 notification.style.height = SimpleNotificationView.defaultHeight
-                notification.style.topInset = 0
             }
             else if indexPath.row == 1 {
                 view.insertShadow(color: UIColor.black, opacity: 0.15, radius: 5, offset: CGSize(width: 0, height: 1))
                 notification.showingTime = 0
-                
-                notification.style.leftInset = 0
-                notification.style.rightInset = 0
                 notification.style.height = SimpleNotificationView.defaultHeight
-                notification.style.topInset = 0
             }
             else {
                 // view.safeAreaTopConstraint.constant = 15 - UIEdgeInsets.safeAreaInset.top
@@ -152,11 +144,7 @@ class ViewController: UITableViewController {
             else if indexPath.row == 1 {
                 view.insertShadow(color: UIColor.black, opacity: 0.15, radius: 5, offset: CGSize(width: 0, height: 1))
                 notification.showingTime = 0
-                
-                notification.style.leftInset = 0
-                notification.style.rightInset = 0
                 notification.style.height = SecondNotificationView.defaultHeight
-                notification.style.topInset = 0
             }
             else {
                 view.insertShadow(color: UIColor.black, opacity: 0.3, radius: 15, offset: CGSize.zero)
@@ -175,9 +163,6 @@ class ViewController: UITableViewController {
             let viewController = CustomLocalNotificationViewController(pokemon: pokemon)
             let notification = DTLocalNotification(viewController: viewController)
             notification.style.height = SecondNotificationView.defaultHeight - UIEdgeInsets.safeAreaInset.top + 10
-            notification.style.leftInset = 0
-            notification.style.rightInset = 0
-            notification.style.topInset = 0
             
             if indexPath.row == 1 {
                 notification.showingTime = 0
