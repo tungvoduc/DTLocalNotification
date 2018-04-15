@@ -101,7 +101,6 @@ public class DTInteractiveLocalNotificationPresenter: DTLocalNotificationPresent
     }
     
     func logConstraintValueForValue(_ value : CGFloat, limit: CGFloat) -> CGFloat {
-        print(value/limit)
         return limit * (1 + log10(value/limit))
     }
 }
