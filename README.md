@@ -5,6 +5,30 @@
 [![License](https://img.shields.io/cocoapods/l/DTLocalNotification.svg?style=flat)](http://cocoapods.org/pods/DTLocalNotification)
 [![Platform](https://img.shields.io/cocoapods/p/DTLocalNotification.svg?style=flat)](http://cocoapods.org/pods/DTLocalNotification)
 
+## Screenshots
+<img src="Screenshots/screenshot1.png" width=300 rspace=20>
+<img src="Screenshots/screenshot2.png" width=300>
+
+## Usage
+In order to present a local notification, it is required to have a DTLocalNotification instance before asking the presenter to show it:
+
+```swift
+let view = ExampleView(data: data)
+let notification = DTLocalNotification(view: view)
+
+DTLocalNotificationPresenter.shared.showNotification(notification, completion: nil)
+```
+
+```swift
+let notification = CustomLocalNotificationViewController(data: data)
+
+DTLocalNotificationPresenter.shared.showNotification(notification, completion: nil)
+```
+As you can see, there are two different ways to present a local notification. The second way is usually more efficient when you want to present local notification view in a custom DTNotificationViewController(custom view layout, status bar style, backgroundColor, etc).
+
+<br/>
+DTLocalNotificationPresenter and DTInteractiveLocalNotificationPresenter are two default presenters for presenting notification. In case you want to change the behaviors or animations or add more functionalities, simply subclass one of these two classes and make your own implementation.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
