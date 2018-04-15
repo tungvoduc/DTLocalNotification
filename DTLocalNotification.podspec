@@ -9,16 +9,10 @@
 Pod::Spec.new do |s|
   s.name             = 'DTLocalNotification'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DTLocalNotification.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Custom control that makes displaying in-app notifications easier, cleaner and more efficient.'
+  s.swift_version    = '4.0'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+DTLocalNotification offers you an fast and easy way to show popups and notifications in your app.
                        DESC
 
   s.homepage         = 'https://github.com/tungvoduc/DTLocalNotification'
