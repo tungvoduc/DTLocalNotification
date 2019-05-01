@@ -21,7 +21,7 @@ public class DTLocalNotification: NSObject {
     public var showingTime: TimeInterval = 3
     
     /// Window
-    internal(set) var window: UIWindow! = {
+    var window: UIWindow! = {
         let window = UIWindow()
         return window
     }()
@@ -51,7 +51,7 @@ public class DTLocalNotification: NSObject {
     
     func commonInit() {
         window.rootViewController = viewController
-        window.windowLevel = UIWindowLevelStatusBar
+        window.windowLevel = UIWindow.Level.statusBar
         window.backgroundColor = UIColor.clear
     }
     

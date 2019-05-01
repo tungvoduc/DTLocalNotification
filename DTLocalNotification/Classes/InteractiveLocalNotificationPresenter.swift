@@ -44,11 +44,11 @@ public class DTInteractiveLocalNotificationPresenter: DTLocalNotificationPresent
             for notification in DTLocalNotificationPresenter.activeNotifications {
                 if notification.window == window {
                     if !notification.isDismissed {
-                        if gestureRecognier.state == UIGestureRecognizerState.began {
+                        if gestureRecognier.state == UIGestureRecognizer.State.began {
                             // When user starts dragging, invalidate timer
                             notification.invalidateTimer()
                         }
-                        else if gestureRecognier.state == UIGestureRecognizerState.changed {
+                        else if gestureRecognier.state == UIGestureRecognizer.State.changed {
                             let frame = getDefaultWindowFrame(from: notification)
                             
                             // Update vertical position
@@ -67,7 +67,7 @@ public class DTInteractiveLocalNotificationPresenter: DTLocalNotificationPresent
                                 window.frame.size.height = frame.height
                             }
                         }
-                        else if gestureRecognier.state == UIGestureRecognizerState.ended {
+                        else if gestureRecognier.state == UIGestureRecognizer.State.ended {
                             if gestureRecognier.velocity(in: window).y < flickingSpeedToDismissThreshold {
                                 dismissNotification(notification, completion: nil)
                             }
@@ -84,7 +84,7 @@ public class DTInteractiveLocalNotificationPresenter: DTLocalNotificationPresent
                                 }
                                 else {
                                     // Go back to original frame
-                                    UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.45, initialSpringVelocity: 10, options: UIViewAnimationOptions.curveEaseOut, animations: {
+                                    UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.45, initialSpringVelocity: 10, options: UIView.AnimationOptions.curveEaseOut, animations: {
                                         window.frame = frame
                                         notification.viewController.view.setNeedsLayout()
                                         notification.viewController.view.layoutIfNeeded()

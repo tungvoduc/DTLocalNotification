@@ -10,7 +10,7 @@ import UIKit
 import DTLocalNotification
 
 class ViewController: UITableViewController {
-    override init(style: UITableViewStyle) {
+    override init(style: UITableView.Style) {
         super.init(style: style)
     }
     
@@ -192,7 +192,7 @@ class CustomTableViewCell: UITableViewCell {
         super.layoutSubviews()
         let imageViewDimension: CGFloat = 30
         imageView?.frame = CGRect(x: 15, y: (frame.height - imageViewDimension)/2, width: imageViewDimension, height: imageViewDimension)
-        imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        imageView?.contentMode = UIView.ContentMode.scaleAspectFit
         textLabel?.frame.origin.x = 15 + imageViewDimension + 15
     }
 }

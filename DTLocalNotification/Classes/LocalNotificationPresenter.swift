@@ -54,7 +54,7 @@ public class DTLocalNotificationPresenter: NSObject {
                 
                 if let notification = notification {
                     // Completion handler
-                    notification.window.windowLevel = UIWindowLevelNormal
+                    notification.window.windowLevel = UIWindow.Level.normal
                     notification.window.isHidden = true
                     notification.window.rootViewController = nil
                     notification.window = nil // Make this line of code to make sure that object will be released
@@ -65,7 +65,7 @@ public class DTLocalNotificationPresenter: NSObject {
                     
                     completion?(finished)
                     
-                    if let index = DTLocalNotificationPresenter.activeNotifications.index(of: notification) {
+                    if let index = DTLocalNotificationPresenter.activeNotifications.firstIndex(of: notification) {
                         // Release strong reference of notification
                         DTLocalNotificationPresenter.activeNotifications.remove(at: index)
                     }
