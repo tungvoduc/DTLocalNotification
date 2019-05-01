@@ -1,6 +1,5 @@
 # DTLocalNotification
 
-[![CI Status](http://img.shields.io/travis/tungvoduc/DTLocalNotification.svg?style=flat)](https://travis-ci.org/tungvoduc/DTLocalNotification)
 [![Version](https://img.shields.io/cocoapods/v/DTLocalNotification.svg?style=flat)](http://cocoapods.org/pods/DTLocalNotification)
 [![License](https://img.shields.io/cocoapods/l/DTLocalNotification.svg?style=flat)](http://cocoapods.org/pods/DTLocalNotification)
 [![Platform](https://img.shields.io/cocoapods/p/DTLocalNotification.svg?style=flat)](http://cocoapods.org/pods/DTLocalNotification)
