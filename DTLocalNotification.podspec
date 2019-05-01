@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DTLocalNotification'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Custom control that makes displaying in-app notifications easier, cleaner and more efficient.'
-  s.swift_version    = '4.0'
+  s.swift_version    = '5.0'
   s.description      = <<-DESC
 DTLocalNotification offers you an fast and easy way to show popups and notifications in your app.
                        DESC
